@@ -4,11 +4,100 @@
     android:layout_height="match_parent"
     android:background="@android:color/holo_blue_light">
 
-    <TextView
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Message Fragment"
-        android:textSize="30sp"
-        android:layout_centerInParent="true"/>
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="79dp"
+        android:src="@mipmap/ic_launcher_round" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="180dp"
+        android:text="StudentID " />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="234dp"
+        android:text="StudentName" />
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="101dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView38"
+        android:layout_alignEnd="@+id/textView38"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="-6dp"
+        android:layout_marginBottom="210dp"
+        android:text="StudentEmail" />
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="320dp"
+        android:text="Rating" />
+
+    <TextView
+        android:id="@+id/driverRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView39"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="37dp"
+        android:layout_toEndOf="@+id/textView38"
+        android:text="Null Rating" />
+
+    <TextView
+        android:id="@+id/studentEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView39"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/textView38"
+        android:text="Null Email" />
+
+    <TextView
+        android:id="@+id/studentName"
+        android:layout_width="88dp"
+        android:layout_height="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="230dp"
+        android:layout_marginEnd="112dp"
+        android:layout_toEndOf="@+id/textView38"
+        android:text="Null Name" />
+
+    <TextView
+        android:id="@+id/studentID"
+        android:layout_width="88dp"
+        android:layout_height="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="176dp"
+        android:layout_marginEnd="127dp"
+        android:layout_toEndOf="@+id/textView37"
+        android:text="Null ID" />
 
 </RelativeLayout>

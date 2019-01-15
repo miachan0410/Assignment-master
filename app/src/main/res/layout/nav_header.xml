@@ -14,14 +14,24 @@
         android:src="@mipmap/ic_launcher_round"/>
 
     <TextView
+        android:id="@+id/StudentID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingTop="8dp"
-        android:text="Coding in Flow"
+        android:text="StudentID" />
+
+    <TextView
+        android:id="@+id/StudentName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:text="StudentName"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
 
     <TextView
+        android:id="@+id/StudentEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="info@codinginflow.com"/>
+        android:paddingTop="8dp"
+        android:text="StudentEmail" />
 </LinearLayout>

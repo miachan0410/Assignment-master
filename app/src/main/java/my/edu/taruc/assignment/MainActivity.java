@@ -34,6 +34,9 @@ public class MainActivity extends AppCompatActivity {
     private String UserID;
     private String Password;
     private String Name;
+    private String StudentEmail;
+    private String DriverRating;
+    private String RatingCount;
     private boolean validate = false;
     private ProgressDialog progressDialog;
 
@@ -107,12 +110,22 @@ public class MainActivity extends AppCompatActivity {
                                 String ID = accountRequest.getString("StudentID");
                                 String Pw = accountRequest.getString("Password");
                                 String Namae = accountRequest.getString("StudentName");
+                                String Email = accountRequest.getString("Email");
+                                String Rating = accountRequest.getString("Rating");
+                                String RatingC = accountRequest.getString("RatingCount");
+
                                 if(ID.equals(UserID) && Pw.equals(Password)) {
-                                    SharedPreferences.Editor editor = getApplicationContext().getSharedPreferences("PrefText", MODE_PRIVATE).edit();
+                                    SharedPreferences.Editor editor = getSharedPreferences("PrefText", MODE_PRIVATE).edit();
                                     editor.putString("StudentName", Namae);
                                     editor.putString("StudentID", ID);
+                                    editor.putString("Email",Email);
+                                    editor.putString("Rating",Rating);
+                                    editor.putString("RatingCount",RatingC);
                                     editor.commit();
                                     Name = Namae;
+                                    StudentEmail= Email;
+                                    DriverRating = Rating;
+                                    RatingCount = RatingC;
                                     validate = true;
                                 }
                             }
