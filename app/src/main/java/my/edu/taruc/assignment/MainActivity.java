@@ -108,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
                                 String Pw = accountRequest.getString("Password");
                                 String Namae = accountRequest.getString("StudentName");
                                 if(ID.equals(UserID) && Pw.equals(Password)) {
-                                    SharedPreferences.Editor editor = getApplicationContext().getSharedPreferences("PrefText", MODE_PRIVATE).edit();
+                                    SharedPreferences.Editor editor = getSharedPreferences("PrefText", MODE_PRIVATE).edit();
                                     editor.putString("StudentName", Namae);
                                     editor.putString("StudentID", ID);
                                     editor.commit();
